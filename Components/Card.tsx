@@ -29,7 +29,7 @@ export default function Card({
 					<Text fontWeight={"bold"} fontSize={"2xl"}>
 						{item.copyright || "Anonymous"}
 					</Text>
-					{likedPosts.some((likedPost) => likedPost.date === item.date) ? (
+					{likedPosts.some((likedPost: any) => likedPost.date === item.date) ? (
 						<Icon
 							boxSize={"6"}
 							color={"red"}
