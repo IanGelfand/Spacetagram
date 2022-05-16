@@ -1,37 +1,22 @@
-import type { NextPage } from "next";
-import {
-	Box,
-	Center,
-	Flex,
-	Icon,
-	IconButton,
-	Image,
-	Text,
-} from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Center, Flex, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie-player";
 import shootingStar from "../public/shootingStar.json";
 import Card from "../Components/Card";
-const Home: NextPage = () => {
-	const [data, setData] = useState([]);
+
+export default function Likes() {
 	const [likedPosts, setLikedPosts] = useState([]);
-	const [isLoading, setIsLoading] = useState(true);
 	const [isClick, setClick] = useState(false);
-	console.log(data);
+
+	const [isLoading, setIsLoading] = useState(true);
 	useEffect(() => {
 		setIsLoading(true);
 		const likedPost = localStorage.getItem("likedPost");
 		if (likedPost) {
 			setLikedPosts(JSON.parse(likedPost));
+			setIsLoading(false);
 		}
-		fetch("/api/apod")
-			.then((res) => res.json())
-			.then((data) => {
-				setData(data);
-				if (data) {
-					setIsLoading(false);
-				}
-			});
+		setIsLoading(false);
 	}, []);
 
 	const handleLike = (post) => {
@@ -74,9 +59,9 @@ const Home: NextPage = () => {
 				</Text>
 			</Flex>
 		</Center>
-	) : (
+	) : likedPosts.length ? (
 		<Flex alignItems={"center"} direction={"column"} justifyContent={"center"}>
-			{data.map((item, index) => (
+			{likedPosts.map((item, index) => (
 				<Card
 					item={item}
 					key={index}
@@ -87,7 +72,11 @@ const Home: NextPage = () => {
 				/>
 			))}
 		</Flex>
+	) : (
+		<Center h={"100vh"}>
+			<Text fontWeight={"bold"} fontSize={"4xl"}>
+				No liked posts
+			</Text>
+		</Center>
 	);
-};
-
-export default Home;
+}
