@@ -8,7 +8,7 @@ export default function Card({
 	handleUnLike,
 	setClick,
 	likedPosts,
-}) {
+}: any) {
 	return (
 		<Box m={5} shadow={"lg"} borderRadius={15} bg={"white"} maxW={"550px"}>
 			{item.media_type === "image" ? (
