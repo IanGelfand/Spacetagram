@@ -34,8 +34,8 @@ const Home: NextPage = () => {
 			});
 	}, []);
 
-	const handleLike = (post) => {
-		const likedPost = [...likedPosts];
+	const handleLike = (post: any) => {
+		const likedPost: any = [...likedPosts];
 		if (likedPost.includes(post)) {
 			const index = likedPost.indexOf(post);
 			likedPost.splice(index, 1);
@@ -47,8 +47,8 @@ const Home: NextPage = () => {
 		localStorage.setItem("likedPost", JSON.stringify(likedPost));
 	};
 
-	const handleUnLike = (post) => {
-		const likedPost = [...likedPosts];
+	const handleUnLike = (post: any) => {
+		const likedPost: any = [...likedPosts];
 		const index = likedPost.indexOf(post);
 		likedPost.splice(index, 1);
 		setLikedPosts(likedPost);

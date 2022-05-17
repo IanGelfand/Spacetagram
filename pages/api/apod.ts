@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
 	req: NextApiRequest,
-	res: NextApiResponse<Data>,
+	res: NextApiResponse,
 ) {
 	try {
 		const today = new Date();

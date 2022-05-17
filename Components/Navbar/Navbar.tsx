@@ -104,7 +104,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 			</Flex>
 			<Flex h={"90%"} direction={"column"} justifyContent={"space-between"}>
 				<Flex direction={"column"}>
-					{LinkItems.map((link) => (
+					{LinkItems.map((link: any) => (
 						<NavItem href={link.href} key={link.name} icon={link.icon}>
 							{link.name}
 						</NavItem>
@@ -118,14 +118,11 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
 	icon: IconType;
 	children: ReactText;
+	href: string;
 }
 const NavItem = ({ href, icon, children, ...rest }: NavItemProps) => {
 	return (
-		<Link
-			href={href}
-			style={{ textDecoration: "none" }}
-			_focus={{ boxShadow: "none" }}
-		>
+		<Link href={href} style={{ textDecoration: "none" }}>
 			<a>
 				<Flex
 					m={2}
