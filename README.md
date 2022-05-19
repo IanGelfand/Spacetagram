@@ -1,28 +1,17 @@
-# Welcome to Profinance 👋
+# Welcome to Spacetagram 👋
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
-![Vercel](https://vercelbadge.vercel.app/api/iangelfand/profinance)
+![Vercel](https://vercelbadge.vercel.app/api/iangelfand/spacetagram)
 
-> Allow users to connect to their bank to view the data
-
-### ✨ [Demo](https://profinance-iangelfand.vercel.app)
-
-## Plaid Login
-
-```sh
-username: user_good
-```
-```sh
-password: pass_good
-```
-
+> View Nasa APOD through an instagram adapatation
+### ✨ [Demo](https://spacetagram-l44v80t6a-iangelfand.vercel.app)
 
 ## Clone
 
 ```sh
-git clone https://github.com/IanGelfand/Profinance.git
+git clone https://github.com/IanGelfand/Spacetagram.git
 ```
 ```sh
-cd Profinance
+cd Spacetagram
 ```
 
 ## Install
@@ -47,4 +36,3 @@ Feel free to check [issues page](https://github.com/IanGelfand/Spacetagram/issue
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
