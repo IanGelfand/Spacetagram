@@ -26,6 +26,12 @@ npm install
 npm run dev
 ```
 
+## 🛠️ Built with
+
+- [Nextjs](https://nextjs.org)
+- [Nasa APOD](https://api.nasa.gov)
+- [Chakra Ui](https://api.nasa.gov)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
