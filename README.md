@@ -30,7 +30,7 @@ npm run dev
 
 - [Nextjs](https://nextjs.org)
 - [Nasa APOD](https://api.nasa.gov)
-- [Chakra Ui](https://api.nasa.gov)
+- [Chakra Ui](https://chakra-ui.com)
 
 ## 🤝 Contributing
 
