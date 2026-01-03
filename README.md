@@ -3,7 +3,7 @@
 ![Vercel](https://vercelbadge.vercel.app/api/iangelfand/spacetagram)
 
 > View Nasa APOD through an instagram adapatation
-# ✨ [Demo](https://spacetagram.spectraldesign.co/)
+# ✨ [Demo](https://spacetagram.gelfandian.com/)
 
 ## Clone
 
